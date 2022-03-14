@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+<!-- At this point when a user puts in a number it doubles the amount. There was an attempt to write where the number is divided by two but was having trouble with type casting ints.  -->
+    <table>
+    {% for i in range (x): %}
+        <tr>
+            {% for j in range(x): %}
+            <td class='color1'></td>
+            <td class='color2'></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for j in range(x): %}
+            <td class='color2'></td>
+            <td class='color1'></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    <!-- I am positive there is a way to write this code to where every box is either an even or odd and equals to a certain color. Just can not get my brain to put it into code. I would appreciate any feedback or help with this project.   -->
+    
+       
+    </table>
+
+</body>
+
+</html>
